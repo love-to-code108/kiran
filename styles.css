@@ -1,0 +1,219 @@
+/* we are working with the global variables here */
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-family: 'Rubik', sans-serif;
+}
+:root{
+    --poppins:'Poppins', sans-serif;
+    --rubik:'Rubik', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* the body section */
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+/* the navigation bar */
+#navbar{
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: +1000;
+}
+.logo{
+    width: 45%;
+}
+.logo h1{
+    padding-left: 2.4rem;
+    margin-top: 1rem;
+
+}
+.logo h1 a{
+    color: black;
+    text-decoration: none;
+}
+.navbarObjects{
+    width: 55%;
+}
+.navbarObjects ul{
+    display: grid;
+    grid-template-columns: 10rem auto 8rem 8rem auto auto;
+}
+.navbarObjects ul li{
+    list-style: none;
+}
+.navbarObjects ul li a{
+    height: 4rem;
+    width: 100%;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-family: var(--poppins);
+    margin-top: 0.2rem;
+}
+.navbarObjects ul li a:hover{
+    background-color: black;
+    color: white;
+}
+#login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-family: var(--rubik);
+    font-weight: bolder;
+    color: black;
+    background-color: white;
+    border: solid black  2px;
+    margin-right: 1.2rem;
+    margin-top: 0.2rem;
+    
+}
+#login:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+/* this section works with the border of the entire body */
+#margin{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+/* this section deals with the hero section */
+#heroSection{
+    height: 100vh;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+#heroSection img{
+    height: 90vh;
+    width: auto;
+    position: absolute;
+    right: 12rem;
+    top: 4rem;
+}
+/* be kind to your mind */
+#heroSection h1{
+    font-family: var(--poppins);
+    position: absolute;
+    font-size: 7rem;
+    line-height: 8rem;
+    top: 15rem;
+    left: 12rem;
+}
+/* its your battle but you dont need to fight it alone */
+#heroSection p{
+    position: absolute;
+    font-size: 1.2rem;
+    top: 31rem;
+    left: 30rem;
+
+}
+#take_test{
+    position: absolute;
+    top: 35rem;
+    left: 13rem;
+    
+    
+}
+#take_test a{
+    width: 20rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    border: solid black  2px;
+
+}
+#take_test a:hover{
+    color: white;
+    background-color: black;
+}
+
+#take_test a h1{
+    line-height: normal;
+    font-size: 4rem;
+    font-family: var(--poppins);
+
+}
+
+/* this is the take test section  */
+#takeTest{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200vh;
+    width: auto;
+    /* border: solid black 5px; */
+
+}
+#takeTest h1{
+    padding-top: 5rem;
+    font-size: 9rem;
+    font-family: var(--poppins);
+}
+.gridContainer{
+    display: grid;
+    height: 75%;
+    width: 80%;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 1rem 1rem;
+}
+.gridContainer a{
+    text-decoration: none;
+    color: black;
+    
+    border-radius: 10px;
+    width: auto;
+    border: solid black 2px;
+    box-shadow:1rem 1rem black;
+}
+.gridContainer a div{
+    position: relative;
+    
+}
+.gridContainer a div p{
+    font-family: 'Roboto Slab', serif;
+    left: 1.5rem;
+    top: 2rem;
+    position: absolute;
+    font-size: 4rem;
+}
+/* bookAppointment */
+#bookAppointment{
+    height: 100vh;
+}
+/* websiteStats */
+#websiteStats{
+    height: 100vh;
+}
+/* blog */
+#blog{
+    height: 100vh;
+}
+/* faq */
+#faq{
+    height: 100vh;
+}
