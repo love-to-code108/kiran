@@ -84,10 +84,9 @@ body{
     margin-top: 0.2rem;
     
 }
-#login:hover{
-    cursor: pointer;
-    background-color: black;
-    color: white;
+#login a{
+    text-decoration: none;
+    color: black;
 }
 /* this section works with the border of the entire body */
 #margin{
